@@ -1,0 +1,103 @@
+
+
+
+
+Données
+Un ensemble de données du top 1000 des films ayant fait le plus d'argent de Hollywood.
+Les informations  sous formes de variables nominales et variables discretes
+Les variables discretes sont:
+ventes domestique, ventes internationales et ventes mondiales
+Les variables nominales sont:
+le titre, le résumé, le distributeur, la date de parution, la license, la durée et le genre
+
+
+Hypotheses
+1- Les plus grandes compagnies du distributions de films d'Hollywood seront
+celles qui auront le plus de films dans cette banque de données (top 1000 films)
+Lien pour listes des plus grands distributeurs
+https://www.the-numbers.com/box-office-records/worldwide/all-movies/theatrical-distributors/
+2- Une grande majorité des films de la banque de données seront des films qui
+sont sortis il y a longtemps. Ils auront donc eu le temps d'amasser plus de ventes
+3- La fréquence de genres des films sera corrélée avec la populartité des genres de films (Aventure et Action plus fréquents)
+Lien pour la popularité des genres:
+https://www.statista.com/statistics/188658/movie-genres-in-north-america-by-box-office-revenue-since-1995/
+4- Les ventes domestiques seront corrélées positivement avec les ventes internationales et mondiales
+
+Exemples de graphiques?
+
+
+Défis attendus:
+- Des donnees manquantes
+- Beaucoup de données devront être transformées pour être utilisable
+ex: la date de parution devra surement être recodée
+Le résumé devra être modifié pour être utilisé, sinon il n'est que de longues chaines (difficile pour le AA)
+La durée devra être transformée en minutes pour être utilisable facilement
+- Puisque certaines informations sont prises de d'autres sources/sites que
+la banque de données, il faudra faire attention avec ces données externes
+
+
+Pseudo code: (plus importante partie, avoir des fonctions dedans)
+
+Histogramme (basique):
+plt.hist(DATA, bins=30, alpha=0.5,
+         histtype='stepfilled',
+         color='steelblue', edgecolor='none')
+
+
+Histogramme sns separes)
+
+with sns.axes_style('white'):
+    g = sns.catplot(data=movie, x = 'Distributor',
+                    aspect=4.0, kind='count')
+    g.set_ylabels('Number of movies')
+fig = g.fig
+fig.savefig("figure.png")
+   
+1- Traitement des Données manquantes
+2- Transformation des données des dates (peut etre juste prendre les années en fonction des titres)
+ - Statistiques descriptives des données 
+3- Hyp1 Vérifier fréquence des compagnies de distributions (tableau en barre)
+4- Hyp2 Vérifier fréquences de films par année (tableau en barre)
+5- Hyp3 Vérifier fréquence des films en fonction des genres (tableau en barre)
+6- Hyp4 Anova pour tester les 3 variables??
+
+Partie Apprentissage Automatique
+2- Separer le dataset pour preparer AA (une partie sera le training et une le test de performance)
+3- Donner des ponderations au AA sur quoi considerer pour faire ces decisions
+4- tester la performance
+5- Repeter 3 et 4 jusqu'a ce que la performance soit acceptable
+
+
+Methode statistiques??
+- Faire analyse descriptives
+Correlations, Anova? ...
+-Correlats pour choix analyse
+
+-Attendus pour hypothese 1 que :
+-Attendus pour hypothese 2 que :
+-Attendus pour hypothese 3 que :
+-Attendus pour hypothese 4 que :
+
+
+
+Calendrier: (a ajouter le temps alloué)
+
+Semaine du 27 février: Traitement des données manquantes + transformations préliminaires + statistiques descriptives
+Semaine du 7 mars: Écriture du texte d'introduction et de méthodes 
+Semaine du 14 mars: Vérification des hypothèses (1 a 3) utilisant la visualisation + description des résultats
+Semaine du 21 mars: Vérification de l'hypothèse 4 + description des résultats
+Semaine du 28 mars: séparation du dataset  pour AA + training du AA
+Semaine du 4 avril: Finalisation et test de AA + description du résultat
+Semaine du 11 avril: Complétion du projet 
+19 avril : Remise du projet
+
+
+Description du groupe: 
+- Camarades de classes, consommateurs de films selon le public general,...
+
+
+Comme plan A, B, C et D du présent projet, les 4 hypothese auront ce role. Dans le meilleur des mondes les 4 hypotheses pourront être vérifiée. Dans le cas contraire, seulement quelques de celles-ci pourront être confirmées.  
+
+Plan A: le AA pourra prédire les ventes mondiales (si elles sont corrélées avec les autres ventes)
+
+Plan B: Le AA pourra prédire la compagnie de distribution/ pourra prédire la date de parution

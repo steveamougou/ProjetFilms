@@ -1,0 +1,29 @@
+Donnees: des informations de pengouins venant du Palmer archipelego 3 especes sur 3 iles
+(especes, ile, sexe, ile, longueur de nageoires, masse,...)
+
+Types de varibles: nominales ( especes,ile, aile,...)  continues (masse, longueur de najoire) dates??
+
+Hypotheses: 
+-on s'attends a ce que l'espece va grandement indiquer l'iles sur laquelle le pingouin est (meme espece sera plus sur une ile que sur les 2 autres iles, une majorite ensemble)
+-Les variables de masse et de longueure de najoire pourront dire si c'est un male ou une femelle
+- Avoir 
+
+Defis attendus: des donnees manquantes, les donnees ne seront peut etre pas assez pour que AA puisse etre performant (seulement 345 pingouins)
+
+Pseudo code: 
+1- Voir les correlations entre mes variables et verifier mes hypotheses
+2- Separer le dataset pour preparer AA (une partie sera le training et une le test de performance)
+3- Donner des ponderations au AA sur quoi considerer pour faire ces decisions
+4- tester la performance
+5- Repeter 3 et 4 jusqu'a ce que la performance soit acceptable 
+
+
+Methode statistiques??
+- Faire analyse descriptives
+Correlations, Anova? ...
+-Correlats pour choix analyse
+
+Echeancier 
+- pour 3 mars. finir la preparation des donnees et du AA
+- Du 3 au 20 mars, training du AA
+- 

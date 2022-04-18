@@ -1,0 +1,12 @@
+notebook
+pandas
+numpy
+scipy
+statsmodels
+scikit-learn
+matplotlib
+seaborn
+xlrd
+openpyxl
+xlsxwriter
+ipywidgets

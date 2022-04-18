@@ -1,0 +1,14 @@
+Credit for the dataset:
+https://www.kaggle.com/datasets/sanjeetsinghnaik/top-1000-highest-grossing-movies
+
+
+A lot of the code was taken and modified from websites like stack overflow or programming tutorials
+Sadly, could not keep track of all sources. Here are some that were kept:
+https://pandas.pydata.org/docs/index.html
+https://www.kaggle.com/willkoehrsen/start-here-a-gentle-introduction.
+https://datatofish.com/sql-to-pandas-dataframe/
+https://stackoverflow.com/
+
+I would also like to thank some of my peers who helped for different steps of the projets.
+
+Dr. Hanganu should also be thanked for providing the training for said project
