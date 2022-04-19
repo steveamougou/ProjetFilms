@@ -1,7 +1,8 @@
 import pandas as pd
 import sqlite3
-
-cleandf = pd.read_excel('/home/steveb/Desktop/Universite/PSY4016/Projet/Data/cleandata.xlsx')
+import os
+path = os.getcwd()
+cleandf = pd.read_excel(path +'Data/cleandata.xlsx')
 
 conn = sqlite3.connect('movie_database')
 c = conn.cursor()

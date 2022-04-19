@@ -4,11 +4,14 @@ import sklearn
 import seaborn as sns
 import matplotlib
 import sqlite3
+import os
 from matplotlib import pyplot as plt
 from code.traitement import *
 from code.stats import *
 from sklearn import impute
-data = pd.read_excel('/home/steveb/Desktop/Universite/PSY4016/Projet/Data/rawdata.xlsx')
+path= os.getcwd()
+
+data = pd.read_excel(path + '/Data/rawdata.xlsx')
 
 etape = 1
 afficheur = lambda x: str(x)

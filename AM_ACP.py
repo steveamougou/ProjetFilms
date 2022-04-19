@@ -4,6 +4,7 @@ import numpy as np
 import copy
 import matplotlib
 import seaborn as sns
+import os
 from sklearn import model_selection
 from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
 from sklearn import pipeline
@@ -14,11 +15,11 @@ from sklearn import preprocessing
 from code.traitement import *
 from matplotlib import pyplot as plt
 
-
+path = os.getcwd()
 etape = 5
 afficheur = lambda x: str(x)
 
-data = pd.read_excel('/home/steveb/Desktop/Universite/PSY4016/Projet/Data/cleandata.xlsx')
+data = pd.read_excel(path + 'Data/cleandata.xlsx')
 
 #il est necessaire d'encoder ncertaines variables
 data['Distributor'] = encoder(data['Distributor'])

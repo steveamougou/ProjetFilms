@@ -1,14 +1,15 @@
 import pandas
 import scipy
 import numpy as np
+import os
 from scipy import stats
 import matplotlib.pyplot as plt
 import statsmodels
 from statsmodels.formula.api import ols
 import sklearn
 
-
-data = pandas.read_excel('/home/steveb/Desktop/Universite/PSY4016/Projet/Data/cleandata.xlsx')
+path = os.getcwd()
+data = pandas.read_excel(path + 'Data/cleandata.xlsx')
 
 #ici, pour boir la distribution des vente mondiale, ce code s<affiche sur jupyter notebook
 #on voit ici les donnees descriptives de mon dataset
