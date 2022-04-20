@@ -16,10 +16,15 @@ from code.traitement import *
 from matplotlib import pyplot as plt
 
 path = os.getcwd()
+system = ""
+if "/" in path:
+    system = "/"
+if "\\" in path:
+    system = "\\"
 etape = 5
 afficheur = lambda x: str(x)
 
-data = pd.read_excel(path + 'Data/cleandata.xlsx')
+data = pd.read_excel(path + system + 'Data' + system + 'cleandata.xlsx')
 
 #il est necessaire d'encoder ncertaines variables
 data['Distributor'] = encoder(data['Distributor'])

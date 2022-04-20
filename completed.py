@@ -9,9 +9,13 @@ from matplotlib import pyplot as plt
 from code.traitement import *
 from code.stats import *
 from sklearn import impute
-path= os.getcwd()
-
-data = pd.read_excel(path + '/Data/rawdata.xlsx')
+path = os.getcwd()
+system = ""
+if "/" in path:
+    system = "/"
+if "\\" in path:
+    system = "\\"
+data = pd.read_excel(path + system + 'Data' + system + 'rawdata.xlsx')
 
 etape = 1
 afficheur = lambda x: str(x)

@@ -7,9 +7,13 @@ import matplotlib.pyplot as plt
 import statsmodels
 from statsmodels.formula.api import ols
 import sklearn
-
 path = os.getcwd()
-data = pandas.read_excel(path + 'Data/cleandata.xlsx')
+system = ""
+if "/" in path:
+    system = "/"
+if "\\" in path:
+    system = "\\"
+data = pandas.read_excel(path + system + 'Data' + system + 'cleandata.xlsx')
 
 #ici, pour boir la distribution des vente mondiale, ce code s<affiche sur jupyter notebook
 #on voit ici les donnees descriptives de mon dataset

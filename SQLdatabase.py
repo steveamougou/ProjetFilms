@@ -2,7 +2,12 @@ import pandas as pd
 import sqlite3
 import os
 path = os.getcwd()
-cleandf = pd.read_excel(path +'Data/cleandata.xlsx')
+system = ""
+if "/" in path:
+    system = "/"
+if "\\" in path:
+    system = "\\"
+cleandf = pd.read_excel(path + system + 'Data' + system + 'cleandata.xlsx')
 
 conn = sqlite3.connect('movie_database')
 c = conn.cursor()
