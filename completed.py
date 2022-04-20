@@ -40,7 +40,7 @@ data['Group'] = mod.group(data['Release Date'])
 
 #on va ici regler le probleme de valeurs manquantes
 cleandf = mvalues(data)
-cleandf.to_excel('/home/steveb/Desktop/Universite/PSY4016/Projet/Data/cleandata.xlsx', index=False)
+cleandf.to_excel(path + system + 'Data' + system + 'cleandata.xlsx', index=False)
 
 # Le choix a ete fait de ne pas standardiser les donnes, pour faciliter la visualisation
 # cleandf['Domestic Sales (in $)'] = standardiser(cleandf['Domestic Sales (in $)'])
@@ -51,11 +51,11 @@ cleandf.to_excel('/home/steveb/Desktop/Universite/PSY4016/Projet/Data/cleandata.
 regression = analysis(cleandf)
 print(regression)
 
-cleandf.to_excel('/home/steveb/Desktop/Universite/PSY4016/Projet/Data/cleandata.xlsx', index=False)
+
 
 
 #on sauvegarde le r/sultat de l'analyse sous format csv
-with open('/home/steveb/Desktop/Universite/PSY4016/Projet/Data/analyses.csv', 'w') as fh:
+with open( path + system + 'Data' + system + 'analyses.csv', 'w') as fh:
     fh.write(regression.as_csv())
 
 

@@ -2,8 +2,8 @@
 Dep. Variable:   ,Sales           ,  R-squared:         ,   0.081 
 Model:           ,OLS             ,  Adj. R-squared:    ,   0.047 
 Method:          ,Least Squares   ,  F-statistic:       ,   2.372 
-Date:            ,Sun, 17 Apr 2022,  Prob (F-statistic):,2.78e-05 
-Time:            ,18:29:13        ,  Log-Likelihood:    , -18208. 
+Date:            ,Tue, 19 Apr 2022,  Prob (F-statistic):,2.78e-05 
+Time:            ,22:25:04        ,  Log-Likelihood:    , -18208. 
 No. Observations:,   918          ,  AIC:               ,3.648e+04
 Df Residuals:    ,   884          ,  BIC:               ,3.665e+04
 Df Model:        ,    33          ,                     ,         
